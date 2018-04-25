@@ -1,0 +1,20 @@
+{
+	"name": "nodejs-backend",
+	"description": "NodeJS backend bundling experiment",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "ts-node src/app.ts"
+	},
+	"dependencies": {
+		"express": "4.16.x",
+		"request": "2.85.x"
+	},
+	"devDependencies": {
+		"@types/express": "4.11.x",
+		"@types/node": "9.6.x",
+		"@types/request": "2.47.x",
+		"ts-node": "6.0.x",
+		"typescript": "2.8.x"
+	}
+}
