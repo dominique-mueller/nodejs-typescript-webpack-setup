@@ -1,5 +1,7 @@
 const path = require( 'path' );
 
+const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
+
 module.exports = {
 	entry: './src/app.ts',
 	target: 'node',
@@ -23,5 +25,10 @@ module.exports = {
                 ]
 			}
 		]
-	}
+    },
+    plugins: [
+        new CleanWebpackPlugin( [
+            path.resolve( 'dist' )
+        ] )
+    ],
 }
