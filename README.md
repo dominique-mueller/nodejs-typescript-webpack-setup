@@ -1,34 +1,21 @@
-# nodejs-backend-bundling-experiment
+<div align="center">
 
-NodeJS backend bundling experiment, using TypeScript and Webpack.
+# nodejs-typescript-webpack-setup
 
-<br>
+**Setup for NodeJS + TypeScript + Webpack**
 
-## How to
+</div>
 
-Prerequisites:
+<br><br>
 
-- Git
-- NodeJS (>= 7.6.0)
+## Commands
 
-### Setup
+The following commands are available:
 
-``` bash
-git clone https://github.com/dominique-mueller/nodejs-backend-bundling-experiment.git
-npm install
-```
+| Command               | Description                                        | CI                 |
+| --------------------- | -------------------------------------------------- | ------------------ |
+| `npm start`           | Creates a development build, running in watch mode |                    |
+| `npm run build`       | Creates a production build                         | :heavy_check_mark: |
+| `npm run start:build` | Runs a production build                            |                    |
 
-### Development build
-
-``` bash
-npm run start:dev
-```
-
-### Production build
-
-``` bash
-npm run build
-npm run start:prod
-```
-
-> The production build output will be written into the `dist` folder.
+> The `build` command will output the result into the `build` folder, the application itself is the `index.js` file.
