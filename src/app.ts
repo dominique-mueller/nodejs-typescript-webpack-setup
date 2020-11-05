@@ -1,13 +1,13 @@
 import * as express from 'express';
 
-import { UserController } from './user.controller';
+import { HelloWorldController } from './hello-world.controller';
 
 const app: express.Application = express();
 const port: number = 3000;
 
-const userController: UserController = new UserController();
-app.use('/api/v1/users/:username', (request, response, next) => userController.getUser(request, response, next));
+const userController: HelloWorldController = new HelloWorldController();
+app.use('/api/hello-world', (request, response, next) => userController.getUser(request, response, next));
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:"${port}".`);
+  console.log(`Server running at "http://localhost:${port}".`);
 });
